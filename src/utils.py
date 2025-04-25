@@ -88,9 +88,9 @@ def discretize(sp):
         
         if spike is None:
             disc.append(None)
-        elif spike < 20:
+        elif spike < 50:
             disc.append(0)
-        elif spike < 40:
+        elif spike < 100:
             disc.append(1)
         else:
             disc.append(2)
