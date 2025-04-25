@@ -1,16 +1,7 @@
 import numpy as np 
 import pandas as pd 
-import sklearn as sk 
 import matplotlib.pyplot as plt
 from typing import Tuple
-import glob
-
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error, r2_score, accuracy_score
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
-from xgboost import XGBRegressor, XGBClassifier
 
 from scipy.signal import find_peaks, peak_prominences
 
@@ -170,8 +161,8 @@ def get_glucose_response(df: pd.DataFrame, unhealthy = False, discrete = False) 
         spikes_lib = discretize(spikes_lib)
         spikes_dex = discretize(spikes_dex)
         
-    print("lib", spikes_lib)
-    print("dex", spikes_dex)
+    #print("lib", spikes_lib)
+    #print("dex", spikes_dex)
     
     
     meals["lib_prom"] = spikes_lib #make new columns
