@@ -2,16 +2,9 @@ import numpy as np
 import pandas as pd 
 import matplotlib.pyplot as plt
 from typing import Tuple
+import constants
 
 from scipy.signal import find_peaks, peak_prominences
-
-#constants/thresholds
-HYPO = 70
-GREEN = 80
-YELLOW = 126
-RED = 180
-TOP = 300
-    
 
 def visualize(df: pd.DataFrame) -> None:
     
